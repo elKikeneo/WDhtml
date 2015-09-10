@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Formularios</title>
+        <meta charset="UTF-8">
+        
+    </head>
+    <body>
+        <h2>Etiquetas que componen formularios</h2>
+        
+        <!--Atributo action indica la ruta del fichero php que recibe los datos y los valida
+        Atributo method especifica el método de envío de los datos (get (hace que los datos introducidos en el formulario se vean por la URL), post (los datos no se ven por la URL y por tanto tengo mayor seguridad))-->
+        <form action="fichero.php" method="get" enctype="multipart/form-data">
+            <fieldset><!--Agrupa campos de un formulario-->
+                <legend>Cajas de texto</legend> <!--Titular del grupo de campos-->
+                <label>Nombre<span>*</span></label>
+                <input type="text" name="nombreUser" placeholder="Nombre" required autofocus>
+                <br><br>
+                <label>Teléfono</label>
+                <input type="text" name="tlfnoUser" value="+34">
+                <br><br>
+                <label>Password*</label>
+                <input type="password" name="passUser" placeholder="Password" required>
+                <br><br>
+                <label>Área de texto</label>
+                <textarea name="cuerpoTxt" cols="50" rows="5">Cuerpo del mensaje</textarea>
+                               
+            </fieldset>
+            
+            <fieldset>
+                <legend>Controles de selección</legend>
+                <label>Lista de selección simple (combo)</label>
+                <select name="opciones">
+                    <option value="1">Opc 1</option>
+                    <option disabled value="2">Opc 2</option>
+                    <option selected value="3">Opc 3</option>
+                </select>
+                
+                <br>
+                
+                <label>Lista de selección simple</label>
+                <select size="5" name="seleccionUnica">
+                    <option>Opc 1</option>
+                    <option>Opc 2</option>
+                    <option>Opc 3</option>
+                    <option selected>Opc 4</option>
+                    <option>Opc 5</option>
+              
+                </select>
+                
+                <br>
+                
+                <label>Lista de selección multiple</label>
+                <select size="5" multiple name="seleccionMultiple">
+                    <option>Opc 1</option>
+                    <option>Opc 2</option>
+                    <option>Opc 3</option>
+                    <option>Opc 4</option>
+                    <option>Opc 5</option>
+              
+                </select>
+                
+                <br>
+                
+                <label>Lista de botones radio</label>
+                <input type="radio" name="mascota" value="Perro" checked>Perro
+                <input type="radio" name="mascota" value="Gato">Gato
+                <input type="radio" name="mascota" value="Ratón">Ratón
+                
+                <br>
+                
+                <label>Lista de botones checkbox</label>
+                <input type="checkbox" name="masc1" value="Perro">Perro
+                <input type="checkbox" name="masc2" value="Gato" checked>Gato
+                <input type="checkbox" name="masc3" value="Ratón">Ratón
+                
+                
+            </fieldset>
+            
+            <fieldset>
+                <legend>Subida de ficheros</legend>
+                <input type="file" name="archivo">
+                <!--Importante, siempre que utilicemos este tipo de input debemos añadir un atributo nuevo a la etiqueta form "enctype=''"-->
+                               
+            </fieldset>
+            
+            <fieldset>
+                <legend>Campo Oculto</legend>
+                <input type="hidden" name="oculto" value="Este formulario viene de la sección de contacto">
+                
+            </fieldset>
+            
+            <fieldset>
+                <legend>Tipos de botones</legend>
+                <input type="submit" value="Enviar formulario">
+                <input type="reset" value="Borrar datos">
+            </fieldset>
+            
+            
+            
+        </form>
+    </body>
+</html>

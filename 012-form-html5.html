@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Formulario HTML5</title>
+        <meta charset="UTF-8">
+        
+    </head>
+    <body>
+        <h2>Types html5 para formularios</h2>
+        <form action="fichero.php" method="get">
+            <fieldset>
+                <legend>Inputs html5</legend>
+                <label>Color</label>
+                <input type="color" name="colorFav" value="#feafea">
+                <!---->
+                <label>Fecha</label>
+                <input type="date" name="Fecha" max="2015-12-31" min="2014-01-01">
+                <br>
+                <label>Time</label>
+                <input type="time" name="Hora">
+                <input type="text" name="Hora2" placeholder="hh:mm">
+                <br>
+                <label>Fecha y hora</label>
+                <input type="datetime-local" name="fechayhora">
+                <input type="text" name="fyh" placeholder="dd/mm/yyyy hh:mm">
+                <br>
+                <label>Semana</label>
+                <input type="week" name="semana">
+                <br>
+                <label>Mes</label>
+                <input type="month" name="mes">
+                <br>
+                <!---->
+                <label>Números</label>
+                <input type="number" name="nota" min="0" max="10" step="0.1">
+                <br>
+                <label>Email<span>*</span></label>
+                <input type="email" name="emailUser" required>
+                <br>
+                <label>Teléfono</label>
+                <input type="tel" name="phone" value="+34">
+                <br>
+                <label>Buscador</label>
+                <input type="search" name="buscador" placeholder="search...">
+                <br>
+                <label>URL</label>
+                <input type="url" name="tuweb" value="http://www.">
+                                       
+            </fieldset>
+            
+            <fieldset>
+                <legend>Controles Independientes</legend>
+                <label>Medidor</label>
+                <meter min="0" max="10" value="1">1 de 10</meter>
+                <br>
+                <meter value="0.1"></meter>
+                <br>
+                
+                <label>Progreso</label>
+                <progress max="100" value="25"></progress>
+                
+                
+                
+            </fieldset>
+            
+            <input type="submit" value="Probar">
+            
+        </form>
+        
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tipos de Enlaces</title>
+        <meta charset="UTF8">
+    </head>
+    <body>
+        <h1>Sintaxis de un enlace</h1>
+        <a href="URL">Texto de un enlace</a>
+        <p>El texto del enlace es lo que se visualiza en el navegador. La URL es la dirección donde apunta el enlace y puede ser de estos tipos:</p>
+        
+        <!------------------------------------------------------------------->
+        
+        <h2>Rutas absolutas</h2>
+        
+        <a href="https://www.facebook.com/cocacola"> Facebook Cocacola</a>
+        <p>En una ruta absoluta se indica la ruta del archivo incluyendo el directorio raiz. C:\carpeta1\carpeta2\archivo.doc (Links a doc que no me pertenecen y se encuentras en otro hosting)</p>
+        
+        <!-------------------------------------------------------------------->
+        
+        <h2>Rutas relativas</h2>
+        
+        <a href="002-textos.html">Ejercicios de textos</a>
+        
+        <p>En una ruta relativa se indica la ruta a partir de donde se esté en ese momento situado. No se incluye el directorio raiz. (Link a doc que me pertenece y se encuentra alojado en mi mismo hosting). Para ir al directorio padtre usamos dos puntos (..)</p>
+        
+        <!-------------------------------------------------------------------->
+        
+        <h2>Enlace a un email</h2>
+        <p>Contacta con nosotros a través de esta dirección de correo <a href="mailto:info@elenanaranjo.com">info@elenanaranjo.com</a></p>
+        
+        <!-------------------------------------------------------------------->
+        
+        <h2>Enlace a otro lugar del mismo documento (ancla/anchor)</h2>
+        
+        <a href="#foto">Ir a la imagen</a>
+        <p>Link a una parte de mi documento que debe de llevar el atributo id='foto'</p>
+        
+        <!-------------------------------------------------------------------->
+        
+        <h2>Enlace de descarga</h2>
+        <a href="descarga/001-holaMundo.rar">Download</a><br>
+        <a href="descarga/SQL Developer.pdf" target="_blank" download>Descarga pdf</a>
+        <p>Con el atributo target='_blank' (y si seguido de esto le añadimos un 'nuevo' atributo 'download' el link será directamente de descarga sin previa previsualización) hacemos que el link abra el documento en otra pestaña sin perder así el punto de partida.</p>
+        
+        <!-------------------------------------------------------------------->
+        <h2>Enlace sin dirección</h2>
+        <a href="#">Enlace a nunguna parte</a>
+       
+        <!-------------------------------------------------------------------->
+        
+        <h2>Enlace de Imagen</h2>
+        <a href="#">
+            <img id="foto" src="descarga/artleo.com-11160.jpg" width="1000" alt=''/>
+            
+        </a>
+        
+        
+        
+    </body>
+    
+    
+</html>

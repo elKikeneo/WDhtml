@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Formulario Práctica</title>
+        <meta charset="UTF-8">
+        
+    </head>
+    <body>
+        <h2>Formulario Idealista</h2>
+        <form action="fichero.php" method="get">
+            <fieldset>
+                
+                <label>Precio</label><br>
+                <select name="minp">
+                    <option>Min.</option>
+                    <option>200</option>
+                    <option>500</option>
+                    <option>1000</option>
+                    <option>1500</option>
+                    <option>2000</option>
+              
+                </select>
+                <select name="maxp">
+                    <option>Max.</option>
+                    <option>200</option>
+                    <option>500</option>
+                    <option>1000</option>
+                    <option>1500</option>
+                    <option>2000</option>
+              
+                </select><br><br>
+                <label>Qué buscas</label><br>
+                <select name="seleccionvivienda">
+                    <option>Obra nueva</option>
+                    <option selected>Viviendas</option>
+                    <option>Habitación</option>
+                    <option>Oficinas</option>
+                    <option>Locales o naves</option>
+                    <option>Garajes</option>
+                    <option>Terrenos</option>                    
+              
+                </select><br><br>
+                
+                <input type="checkbox" name="Pisos">Pisos<br> <!--aqui no hace falta el value, enel otro sí-->
+                <input type="checkbox" name="chalets">Casas o chalets<br>
+                <input type="checkbox" name="rústicas">Casas rústicas<br>
+                <input type="checkbox" name="Duplex">Duplex<br>
+                <input type="checkbox" name="Ático">Ático<br><br>
+                
+                <label>Habitaciones</label><br>
+                <input type="checkbox" name="hab0">0 habitaciones (estudios)<br>
+                <input type="checkbox" name="hab1">1<br>
+                <input type="checkbox" name="hab2">2<br>
+                <input type="checkbox" name="hab3">3<br>
+                <input type="checkbox" name="hab4">4 habitaciones o más<br><br>
+                
+                <label>Baños</label><br>
+                <input type="checkbox" name="baño1">1
+                <input type="checkbox" name="baño2">2
+                <input type="checkbox" name="baño3">3 o +<br><br>
+                
+                <label>Tamaño</label><br>
+                <select name="minp">
+                    <option>Min.</option>
+                    <option>200</option>
+                    <option>500</option>
+                    <option>1000</option>
+                    <option>1500</option>
+                    <option>2000</option>
+              
+                </select>
+                <select name="maxp">
+                    <option>Max.</option>
+                    <option>200</option>
+                    <option>500</option>
+                    <option>1000</option>
+                    <option>1500</option>
+                    <option>2000</option>
+              
+                </select><br><br>
+                
+                <label>Estado</label><br>
+                <select name="seleccionestado">
+                    <option>Indiferente</option>
+                    <option>Para reformar</option>
+                    <option>Buen estado</option>
+                                      
+                </select><br><br>
+                
+                <label>Equipamiento</label><br>
+                <select name="seleccionUnica">
+                    <option>Indiferente</option>
+                    <option>Sólo cocina equipada</option>
+                    <option>Amueblado</option>
+                                      
+                </select><br><br>
+                
+                <label>Caracteristicas</label><br>
+                <input type="checkbox" name="carac1" value="Ascensor">Ascensor<br>
+                <input type="checkbox" name="carac2" value="Garaje">Garaje<br>
+                <input type="checkbox" name="carac3" value="Piscina">Piscina<br>
+                <input type="checkbox" name="carac4" value="Terraza">Terraza<br>
+                <input type="checkbox" name="carac5" value="Exterior">Exterior<br><br>
+                <input type="checkbox" name="carac6" value="Con fotos o vídeos">Con fotos o vídeos<br><br>
+                
+                <a href="#">Más caracteristicas +</a><br><br>
+                
+                <label>Fecha de publicación</label><br>
+                <input type="radio" name="fecha" value="Indiferente" checked>Indiferente<br>
+                <input type="radio" name="fecha" value="Últimas 14 horas">Últimas 24 horas<br>
+                <input type="radio" name="fecha" value="La última semana">La última semana<br>
+                <input type="radio" name="fecha" value="El último mes">El último mes<br><br>
+                
+                <input type="submit" value="Subir formulario">
+                
+            </fieldset>
+            
+            
+        </form>
+        
+        
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Audio HTML5</title>
+        <meta charset="UTF-8">
+
+    </head>
+    <body>
+        <h2>Audio con controles html5</h2>
+        
+        <!--Simple-->
+        <audio src="material/rain.mp3" autoplay controls></audio>
+        
+        <!--Múltiples formatos-->
+        <audio controls>
+            <source src="material/rain.mp3" type="audio/mpeg">
+            <source src="material/rain.ogg" type="audio/ogg">
+            Tu navegador no soporta este archivo multimedia
+            
+        </audio>
+        
+        <h2>Audio con controles JS</h2>
+        <audio src="material/rain.mp3" id="demo"></audio>
+        
+        <div id="botones">
+            <button onclick="document.getElementById('demo').play()">Play</button>
+            <button onclick="document.getElementById('demo').pause()">Pausa</button>
+            <button onclick="document.getElementById('demo').volume+=0.1">V+</button>
+            <button onclick="document.getElementById('demo').volume-=0.1">V-</button>
+        </div>
+    </body>
+</html>
